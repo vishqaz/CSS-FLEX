@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  #par{
+      /* border:1px solid red; */
+      height:100px;
+      display:flex;
+      justify-content: space-around;
+
+  }
+  #par:hover{
+      cursor: pointer;
+  }
+  #par>div:nth-child(1){
+      width:15%;
+      height:100%;
+      /* border:1px solid black; */
+  }
+  #par>div:nth-child(2){
+  width:60%;
+  height:100%;
+  /* border:1px solid black; */
+  justify-content: space-around;
+  }
+  #par>div{
+      display:flex;
+      align-items: center;
+      justify-content: center;
+
+  }
+  p+div{
+     display:flex; 
+     background-color: aquamarine;
+     justify-content: center;
+     align-items: center;
+     padding:0px 20px;
+   
+  }
+  p+div>img{
+      width:30px;
+      height:20px;
+      margin-left: 5px;
+  }
+  select{
+      border:none;
+  }
+
+  button{
+      color: deeppink;
+      padding:10px;
+      border:1px solid deeppink;
+      border-radius: 10px;
+      font-weight: bold;
+  }
+    </style>
+</head>
+<body>
+    <div id="par">
+        <div>
+            <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="">
+
+
+        </div>
+        <div>
+            <select name="" id="">
+                <option value="">COURSES</option>
+                <option value="">AND</option>
+                <option value="">WEB DEVELOPMENT</option>
+                <option value="">DATA ANALYTICS</option>
+            </select>
+            <p>FEES $ ISA </p>
+            <p>ABOUT US</p>
+            <p>HIRE FROM US</p>
+            <p>FAQ</p>
+            <p>EVENTS</p>
+     <div>
+         <p>REFER & EARN</p>
+         <img src="https://www.masaischool.com/img/referral/hand.png" alt="">
+     </div>
+     <button>LOGIN</button>
+        </div>
+
+    </div>
+</body>
+</html>
